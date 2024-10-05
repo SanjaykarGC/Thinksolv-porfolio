@@ -36,7 +36,7 @@ export const PinContainer = ({
       )}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
-      href={href.startsWith("http") ? href : `https://${href}`}
+      href={href && href.startsWith("http") ? href : `https://${href ?? ""}`}
       target={"_blank"}
     >
       <div
